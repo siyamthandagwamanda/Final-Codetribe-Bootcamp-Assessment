@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Newsletter Card -->
+    <div class="container" id="signupCard">
+
+        <!-- Left Side -->
+        <div class="left">
+
+            <h1>Stay updated!</h1>
+
+            <p class="description">
+                Join 60,000+ product managers receiving monthly updates on:
+            </p>
+
+            <ul class="features">
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+            </ul>
+
+            <form id="newsletterForm">
+
+                <div class="label-row">
+                    <label>Email address</label>
+                    <span id="errorMsg"></span>
+                </div>
+
+                <input
+                    type="text"
+                    id="email"
+                    placeholder="email@company.com"
+                >
+
+                <button type="submit">
+                    Subscribe to monthly newsletter
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+            <img
+                src="./assets/images/illustration-sign-up-desktop.svg"
+                alt="Newsletter Image"
+            >
+        </div>
+
+    </div>
+
+    <!-- Success Card -->
+    <div class="success-card" id="successCard">
+
+        <img
+            src="./assets/images/icon-success.svg"
+            alt="Success"
+        >
+
+        <h2>Thanks for subscribing!</h2>
+
+        <p>
+            A confirmation email has been sent to
+            <strong id="userEmail"></strong>.
+            Please open it and click the button inside to confirm your subscription.
+        </p>
+
+        <button id="dismissBtn">
+            Dismiss message
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
